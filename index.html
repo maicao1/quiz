@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Lógica de Programação</title>
+  <link rel="stylesheet" href="q.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Página 1: Tela Inicial -->
+    <div class="page" id="page1">
+      <h1>Quiz de JoJO </h1>
+      <img src="download 1.png" alt="inicio">
+      <button onclick="startQuiz()">Começar</button>
+    </div>
+
+    <!-- Página 2: Pergunta 1 -->
+    <div class="page" id="page2">
+      <h2>Qual a Habilidade desse stand?</h2> 
+      <img src="download 2.png" alt="star platinum"> 
+      <button onclick="responder(1, true)">parar o tempo</button>
+      <button onclick="responder(1, false)">invoca meteoros</button>
+      <button onclick="responder(1, false)">controlar o clima</button>
+    </div>
+
+    <!-- Página 3: Pergunta 2 -->
+    <div class="page" id="page3">
+      <h2>Qual a Habilidade desse stand?</h2> 
+      <img src="images 2.png " alt="wander of wu">
+      <button onclick="responder(2, false)">causa exblosoes</button>
+      <button onclick="responder(2, true)">Calamidade</button>
+      <button onclick="responder(2, false)">voltar no tempo</button>
+    </div>
+
+    
+    <div class="page" id="page4">
+         <h2>Qual a Habilidade desse stand?</h2> 
+    <img src="download 3.png" alt="golden experience requiem"> 
+      <button onclick="responder(3, false)">reseta o universo</button>
+      <button onclick="responder(3, false)">consegue saltar de universo</button>
+      <button onclick="responder(3, true)">retornar tudo ao zero</button>
+    </div>
+
+   <!-- Página 4: Pergunta 3 (mensagem q esta entrando no  modo dificil)-->
+    <div class="page" id="page4">
+         <h2>parabens voce passou do modo facil, agorea vamos para o dificil! preparado?</h2> 
+    <img src="images 4.png" alt="preparado"> 
+      <button onclick="responder(4, true)">sim</button>
+      <button onclick="startQuiz()">não</button>
+      
+    </div>
+
+    <!-- Página 4: Pergunta 3 -->
+    <div class="page" id="page4">
+         <h2>Qual a Habilidade desse stand?</h2> 
+    <img src="images 5.png" alt="killer queen"> 
+      <button onclick="responder(5, false)">sua habilidade faz com que ele consiga inverter a gravidade em volta dele por 5km  </button>
+      <button onclick="responder(5, false)">sua habilidade faz com que ele solte uma bomba que reseta o universo, todos depois do reset saberam de seu futuro e nao terao como autera-lo</button>
+      <button onclick="responder(5, true)">sua habilidade faz com que ele solte uma bomba que faz ele voltar no tempo em no maximo  1 hora</button>
+    </div>
+
+    <!-- Página 4: Pergunta 3 -->
+    <div class="page" id="page6">
+         <h2>stands tem algum tipo de limite para suas abilidades? </h2> 
+    <img src="images 6.png" alt="limite"> 
+      <button onclick="responder(6, false)">sim, o limite ja é pre definido quando  o usuario o invoca pela primeira vez </button>
+      <button onclick="responder(6, true)">suas abilidades nao tem limites</button>
+      <button onclick="responder(6, false)">o limite é o quanto o corpo do usuario aguentar</button>
+    </div>
+    <div class="page" id="page6">
+         <h2>quais sao os mais fortes?</h2> 
+    <img src="images 7.png" alt="forte"> 
+      <button onclick="responder(7, false)">wander of wu, golden especience e requiem made heaven</button>
+      <button onclick="responder(7, false)">task ato 4 d4c Weather Report</button>
+      <button onclick="responder(7, true)">não existe top, sempre vai existir um stand que autera o outro</button>
+    </div>
+
+    <!-- Página 5: Resultado -->
+    <div class="page" id="page9">
+      <img src="acertou.png" alt="">
+        <h1>Resultado</h1>
+      <p id="score"></p>
+      <button onclick="startQuiz()">Tentar novamente</button>
+    </div>
+  </div>
+
+  <script src="q.js"></script>
+</body>
+</html>
